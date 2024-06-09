@@ -4,5 +4,6 @@
 	<suite-files>
 		<suite-file path="./Regression.xml"></suite-file>
 		<suite-file path="./Functional.xml"></suite-file>
+		<suite-file path="./testngSuite.xml"></suite-file>
 	</suite-files>
 </suite> <!--Suite -->

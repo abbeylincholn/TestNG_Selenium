@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import common.commonDataSetupSuites;
 
-public class LoginTestCase extends commonDataSetupSuites {
+public class Login_SuiteTest extends commonDataSetupSuites {
 
 	@Test(priority = 1, description = "This is a login test")
 

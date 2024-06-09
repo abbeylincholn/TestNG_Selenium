@@ -4,9 +4,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import common.commonDataSetupSuites;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class HowToUseAssertion {
+public class HowToUseAssertion extends commonDataSetupSuites {
 
 	@Test(groups = "regression")
 	public void titleTest() {

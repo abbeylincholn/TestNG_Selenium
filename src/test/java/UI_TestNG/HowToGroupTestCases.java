@@ -1,5 +1,6 @@
 package UI_TestNG;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 @Test(groups = "admin-registration")
@@ -17,6 +18,7 @@ public class HowToGroupTestCases {
 	@Test(priority = 2, groups = "regression")
 	public void bTest2() {
 		System.out.println("test2");
+		Assert.assertTrue(false);
 	}
 
 	@Test(groups = { "regression", "smoke" })
