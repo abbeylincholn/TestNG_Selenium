@@ -1,42 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[This is test1]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-06-09T09:46:00 BST" name="&#039;Reading browser details from testng xml" finished-at="2024-06-09T09:46:05 BST" duration-ms="4298">
+  <suite started-at="2024-06-09T14:13:04 BST" name="Default suite" finished-at="2024-06-09T14:13:06 BST" duration-ms="1792">
     <groups>
-      <group name="admin-registration">
-        <method signature="HowToGroupTestCases.bTest3()[pri:0, instance:UI_TestNG.HowToGroupTestCases@30c15d8b]" name="bTest3" class="UI_TestNG.HowToGroupTestCases"/>
-        <method signature="HowToGroupTestCases.bTest4()[pri:0, instance:UI_TestNG.HowToGroupTestCases@30c15d8b]" name="bTest4" class="UI_TestNG.HowToGroupTestCases"/>
-        <method signature="HowToGroupTestCases.aTest1()[pri:1, instance:UI_TestNG.HowToGroupTestCases@30c15d8b]" name="aTest1" class="UI_TestNG.HowToGroupTestCases"/>
-        <method signature="HowToGroupTestCases.bTest2()[pri:2, instance:UI_TestNG.HowToGroupTestCases@30c15d8b]" name="bTest2" class="UI_TestNG.HowToGroupTestCases"/>
-      </group> <!-- admin-registration -->
-      <group name="regression">
-        <method signature="HowToGroupTestCases.bTest3()[pri:0, instance:UI_TestNG.HowToGroupTestCases@30c15d8b]" name="bTest3" class="UI_TestNG.HowToGroupTestCases"/>
-        <method signature="HowToGroupTestCases.aTest1()[pri:1, instance:UI_TestNG.HowToGroupTestCases@30c15d8b]" name="aTest1" class="UI_TestNG.HowToGroupTestCases"/>
-        <method signature="HowToGroupTestCases.bTest2()[pri:2, instance:UI_TestNG.HowToGroupTestCases@30c15d8b]" name="bTest2" class="UI_TestNG.HowToGroupTestCases"/>
-      </group> <!-- regression -->
       <group name="smoke">
-        <method signature="HowToGroupTestCases.bTest3()[pri:0, instance:UI_TestNG.HowToGroupTestCases@30c15d8b]" name="bTest3" class="UI_TestNG.HowToGroupTestCases"/>
+        <method signature="DependencyTest.reporterTest3()[pri:0, instance:UI_TestNG.DependencyTest@7eac9008]" name="reporterTest3" class="UI_TestNG.DependencyTest"/>
       </group> <!-- smoke -->
-      <group name="smoke or bvt">
-        <method signature="HowToGroupTestCases.bTest4()[pri:0, instance:UI_TestNG.HowToGroupTestCases@30c15d8b]" name="bTest4" class="UI_TestNG.HowToGroupTestCases"/>
-      </group> <!-- smoke or bvt -->
+      <group name="sanity">
+        <method signature="DependencyTest.reporterTest4()[pri:0, instance:UI_TestNG.DependencyTest@7eac9008]" name="reporterTest4" class="UI_TestNG.DependencyTest"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-06-09T09:46:00 BST" name="Functional Testing xml" finished-at="2024-06-09T09:46:05 BST" duration-ms="4298">
-      <class name="UI_TestNG.HowToGroupTestCases">
-        <test-method signature="bTest3()[pri:0, instance:UI_TestNG.HowToGroupTestCases@30c15d8b]" started-at="2024-06-09T09:46:05 BST" name="bTest3" finished-at="2024-06-09T09:46:05 BST" duration-ms="1" status="PASS">
+    <test started-at="2024-06-09T14:13:04 BST" name="Default test" finished-at="2024-06-09T14:13:06 BST" duration-ms="1792">
+      <class name="UI_TestNG.DependencyTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:UI_TestNG.DependencyTest@7eac9008]" started-at="2024-06-09T14:13:01 BST" name="launchBrowser" finished-at="2024-06-09T14:13:04 BST" duration-ms="2349" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bTest3 -->
-        <test-method signature="bTest4()[pri:0, instance:UI_TestNG.HowToGroupTestCases@30c15d8b]" started-at="2024-06-09T09:46:05 BST" name="bTest4" finished-at="2024-06-09T09:46:05 BST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bTest4 -->
-        <test-method signature="aTest1()[pri:1, instance:UI_TestNG.HowToGroupTestCases@30c15d8b]" started-at="2024-06-09T09:46:05 BST" name="aTest1" finished-at="2024-06-09T09:46:05 BST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aTest1 -->
-        <test-method signature="bTest2()[pri:2, instance:UI_TestNG.HowToGroupTestCases@30c15d8b]" started-at="2024-06-09T09:46:05 BST" name="bTest2" finished-at="2024-06-09T09:46:05 BST" duration-ms="6" status="FAIL">
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="userRegistration()[pri:0, instance:UI_TestNG.DependencyTest@7eac9008]" started-at="2024-06-09T14:13:04 BST" name="userRegistration" finished-at="2024-06-09T14:13:06 BST" duration-ms="1752" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -47,7 +31,54 @@ at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertTrue(Assert.java:57)
 at org.testng.Assert.assertTrue(Assert.java:67)
-at UI_TestNG.HowToGroupTestCases.bTest2(HowToGroupTestCases.java:21)
+at UI_TestNG.DependencyTest.userRegistration(DependencyTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[This is test1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userRegistration -->
+        <test-method signature="reporterTest3()[pri:0, instance:UI_TestNG.DependencyTest@7eac9008]" started-at="2024-06-09T14:13:06 BST" name="reporterTest3" finished-at="2024-06-09T14:13:06 BST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at UI_TestNG.DependencyTest.reporterTest3(DependencyTest.java:29)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -79,21 +110,20 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bTest2 -->
-      </class> <!-- UI_TestNG.HowToGroupTestCases -->
-      <class name="UI_TestNG.LoginTest_Parameter">
-        <test-method signature="launchApplication(java.lang.String)[pri:0, instance:UI_TestNG.LoginTest_Parameter@33d512c1]" started-at="2024-06-09T09:46:00 BST" name="launchApplication" finished-at="2024-06-09T09:46:05 BST" duration-ms="4253" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- reporterTest3 -->
+        <test-method signature="reporterTest4()[pri:0, instance:UI_TestNG.DependencyTest@7eac9008]" started-at="2024-06-09T14:13:06 BST" name="reporterTest4" finished-at="2024-06-09T14:13:06 BST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchApplication -->
-      </class> <!-- UI_TestNG.LoginTest_Parameter -->
-    </test> <!-- Functional Testing xml -->
-  </suite> <!-- 'Reading browser details from testng xml -->
+        </test-method> <!-- reporterTest4 -->
+        <test-method signature="userSearch()[pri:0, instance:UI_TestNG.DependencyTest@7eac9008]" started-at="2024-06-09T14:13:06 BST" name="userSearch" finished-at="2024-06-09T14:13:06 BST" depends-on-methods="UI_TestNG.DependencyTest.userRegistration" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userSearch -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:UI_TestNG.DependencyTest@7eac9008]" started-at="2024-06-09T14:13:06 BST" name="closeBrowser" finished-at="2024-06-09T14:13:07 BST" duration-ms="844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- UI_TestNG.DependencyTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="UI_TestNG.HowToGroupTestCases">
+      <class name="UI_TestNG.DependencyTest">
         <methods>
-          <include name="bTest2"/>
+          <include name="closeBrowser"/>
+          <include name="userRegistration"/>
+          <include name="launchBrowser"/>
+          <include name="reporterTest3"/>
         </methods>
-      </class> <!-- UI_TestNG.HowToGroupTestCases -->
+      </class> <!-- UI_TestNG.DependencyTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
